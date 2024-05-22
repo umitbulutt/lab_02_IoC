@@ -1,6 +1,7 @@
 package com.cydeo.account;
 
 import com.cydeo.Currency;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,6 +10,7 @@ import java.util.UUID;
 
 @Getter
 @Setter
+@AllArgsConstructor
 public class Current {
 
     private Currency currency;
@@ -16,6 +18,7 @@ public class Current {
     private UUID accountId;
 
     public void initialize() {
-        System.out.println("current account " + "currency: " + currency.getCode() + ", amount: " + amount + ", accountId: " + accountId);
+        System.out.println(
+                "current account " + "currency: " + currency.getCode() + ", amount: " + amount + ", accountId: " + accountId);
     }
 }

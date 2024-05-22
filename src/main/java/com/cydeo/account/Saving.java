@@ -1,6 +1,7 @@
 package com.cydeo.account;
 
 import com.cydeo.Currency;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,6 +10,7 @@ import java.util.UUID;
 
 @Getter
 @Setter
+@AllArgsConstructor
 public class Saving {
 
     private Currency currency;
